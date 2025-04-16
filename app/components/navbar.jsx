@@ -44,7 +44,7 @@ export default function Navbar() {
           <Image
           alt="Mantaram Legal Logo"
             src={logo}
-            width={100}
+            width={80}
             height={60}
             className="object-contain"
             style={{ maxHeight: '50px' }}
