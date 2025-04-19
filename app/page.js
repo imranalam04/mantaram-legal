@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import ImageCarousel from "./components/image-carousel"
+import About from "./assets/about.png"
 
 export default function Home() {
   return (
@@ -19,11 +20,11 @@ export default function Home() {
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-amber-500/20 rounded-lg"></div>
               <div className="relative rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1611187400820-b3e1beac9b6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={About}
                   alt="Law firm team"
                   width={800}
                   height={600}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-[30rem] object-cover"
                 />
               </div>
             </div>
@@ -32,14 +33,18 @@ export default function Home() {
                 About Mantaram Legal
               </h2>
               <p className="text-lg mb-6 text-gray-600">
-                Founded in 2005, Mantaram Legal has established itself as a premier law firm, providing exceptional
-                legal services to individuals and businesses alike. Our team of dedicated attorneys brings decades of
-                combined experience across various practice areas.
+                Mantaram Legal Associates LLP is a Patna-based law firm registered under the LLP Act & Rules, with its office located at Virat Complex, Boring Road. Founded and led by Advocate Diwakar and Advocate Shivam Kumar, the firm operates with the guiding principle:
+                “यतो धर्मस्ततो जयः” – Where there is Dharma, there is Victory.
               </p>
               <p className="text-lg mb-8 text-gray-600">
-                We pride ourselves on our client-centered approach, ensuring that each client receives personalized
-                attention and strategic solutions tailored to their specific needs.
+                At Mantaram, we are committed to delivering complete legal solutions with integrity, efficiency, and compassion. Our experienced team of Associates and Advocates bring in-depth legal expertise, punctuality, and professionalism to every case. With a strong presence across Bihar, we are supported by a wide network of associated legal professionals—ensuring access to justice even in the remotest parts of the state.
               </p>
+              {/* <p className="text-lg mb-8 text-gray-600">
+                We are actively building a collaborative legal ecosystem that connects advocates from grassroots district courts to those practicing before Hon’ble High Courts, the Supreme Court, and various tribunals and authorities across India. This wide-reaching network allows us to support our clients not only in Bihar but in other states as well.
+              </p> */}
+              {/* <p className="text-lg mb-8 text-gray-600">
+              At Mantaram Legal Associates LLP, we believe in making justice accessible. We proudly handle pro-bono and low-bono cases to serve the public good, and we ensure fast, fair, and high-quality legal remedies tailored to the needs of each individual.
+              </p> */}
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="flex items-start gap-3">
                   <div className="rounded-full bg-amber-500/20 p-2">
